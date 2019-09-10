@@ -11,9 +11,9 @@ import 'package:flutter/material.dart';
 import 'package:task_02_category_widget/category.dart';
 
 // TODO: Pass this information into your custom [Category] widget
-const _categoryName = 'Cake';
-const _categoryIcon = Icons.cake;
-const _categoryColor = Colors.green;
+const _categoryName = 'AlunoGO';
+const _categoryIcon = Icons.people;
+const _categoryColor = Colors.deepPurpleAccent;
 
 /// The function that is called when main.dart is run.
 void main() {
@@ -29,10 +29,14 @@ class UnitConverterApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Unit Converter',
       home: Scaffold(
-        backgroundColor: Colors.green[100],
+        backgroundColor: Colors.white,
         body: Center(
           // TODO: Determine what properties you'll need to pass into the widget
-          child: Category(),
+          child: Category(
+            name: _categoryName,
+            color: _categoryColor,
+            iconLocation: _categoryIcon,
+          ),
         ),
       ),
     );
